@@ -5,3 +5,7 @@ body {
   justify-content: center;
 }
 
+.search {
+  display: flex;
+}
+
