@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import Search from './Search/Search';
+import Search from './components/Search';
 import Users from './Users/Users';
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
           public_repos={data.public_repos}
           isLoading={isLoading}
           bio={data.bio}
-          joinedAt={data.created_at?.split("T")[0]}
+          joinedAt={data.created_at?.split('T')[0]}
         />
       </div>
     </div>
