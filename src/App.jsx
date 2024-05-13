@@ -1,11 +1,10 @@
-
 import './App.css'
 
 function App() {
 
   return (
     <>
-<div>Hello someone!</div>
+<h1>Hello someone!</h1>
     </>
   )
 }
