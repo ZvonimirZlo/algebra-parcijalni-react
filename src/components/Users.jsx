@@ -1,6 +1,5 @@
-import React from "react";
 
-function Preview({
+function Users({
   avatarUrl,
   name,
   login,
@@ -80,4 +79,4 @@ function Preview({
   );
 }
 
-export default Preview;
+export default Users;

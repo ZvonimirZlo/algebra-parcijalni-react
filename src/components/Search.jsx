@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+
 
 function Search({ setData, setIsLoading }) {
     const [userName, setUserName] = useState("");
@@ -25,5 +26,6 @@ function Search({ setData, setIsLoading }) {
         </div>
     );
 }
+
 
 export default Search;

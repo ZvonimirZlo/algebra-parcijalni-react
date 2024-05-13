@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Search from './components/Search';
-import Users from './Users/Users';
+import Users from './components/Users';
 
 function App() {
   const [data, setData] = useState({});
