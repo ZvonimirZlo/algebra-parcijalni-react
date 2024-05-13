@@ -7,9 +7,10 @@ function App() {
   const [data, setData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
 
+
   return (
     <div>
-      <div>
+      <div> 
         <Search setData={setData} setIsLoading={setIsLoading} />
       </div>
       <div>
@@ -25,9 +26,9 @@ function App() {
           isLoading={isLoading}
           bio={data.bio}
           joinedAt={data.created_at?.split('T')[0]}
-        />
+        /> 
       </div>
-    </div>
+    </div> 
   )
 }
 
