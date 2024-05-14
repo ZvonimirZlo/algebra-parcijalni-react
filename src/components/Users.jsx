@@ -1,5 +1,8 @@
+import PropTypes from 'prop-types';
+
 
 function Users({
+
   avatarUrl,
   name,
   login,
@@ -12,6 +15,7 @@ function Users({
   bio,
   joinedAt
 }) {
+
   return (
     <div>
       {!isLoading ? <div>
@@ -78,5 +82,20 @@ function Users({
     </div>
   );
 }
+
+Users.propTypes = {
+  avatarUrl: PropTypes.node,
+  name: PropTypes.string,
+  login: PropTypes.string,
+  public_repos: PropTypes.array,
+  followers: PropTypes.number,
+  following: PropTypes.number,
+  blog: PropTypes.node,
+  email: PropTypes.string,
+  isLoading: PropTypes.string,
+  bio: PropTypes.string,
+  joinedAt: PropTypes.number,
+}
+
 
 export default Users;

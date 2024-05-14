@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import PropTypes from 'prop-types';
 
 function Search({ setData, setIsLoading }) {
     const [userName, setUserName] = useState("");
@@ -19,8 +19,9 @@ function Search({ setData, setIsLoading }) {
         .then(res => res.json())
         .then(repos => setRepos(repos))
         .catch(err => console.log(err))
+        console.log(repos);
       }
-    console.log(repos);
+    
 
     useEffect(() => {
         handleClick();
